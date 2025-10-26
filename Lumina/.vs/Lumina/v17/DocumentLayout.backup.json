@@ -1,7 +1,64 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\interfaces\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\interfaces\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\interfaces\\ieffectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\interfaces\\ieffectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\interfaces\\icollagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\interfaces\\icollagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\entities\\imagelayerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\entities\\imagelayerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\entities\\imageentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\entities\\imageentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\entities\\effectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\entities\\effectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\entities\\collageimageentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\entities\\collageimageentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\entities\\collageentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\entities\\collageentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\models\\imagelayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\models\\imagelayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\models\\effect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\models\\effect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\models\\collageimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\models\\collageimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\models\\collage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\models\\collage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +66,193 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "Lumina.Data\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:57.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IImageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Interfaces\\IImageRepository.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\Interfaces\\IImageRepository.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Interfaces\\IImageRepository.cs",
+              "RelativeToolTip": "Lumina.Data\\Interfaces\\IImageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:56.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IEffectRepository.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Interfaces\\IEffectRepository.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\Interfaces\\IEffectRepository.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Interfaces\\IEffectRepository.cs",
+              "RelativeToolTip": "Lumina.Data\\Interfaces\\IEffectRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:55.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICollageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Interfaces\\ICollageRepository.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\Interfaces\\ICollageRepository.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Interfaces\\ICollageRepository.cs",
+              "RelativeToolTip": "Lumina.Data\\Interfaces\\ICollageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:53.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ImageLayerEntity.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Entities\\ImageLayerEntity.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\Entities\\ImageLayerEntity.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Entities\\ImageLayerEntity.cs",
+              "RelativeToolTip": "Lumina.Data\\Entities\\ImageLayerEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:51.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ImageEntity.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Entities\\ImageEntity.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\Entities\\ImageEntity.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Entities\\ImageEntity.cs",
+              "RelativeToolTip": "Lumina.Data\\Entities\\ImageEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:50.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EffectEntity.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Entities\\EffectEntity.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\Entities\\EffectEntity.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Entities\\EffectEntity.cs",
+              "RelativeToolTip": "Lumina.Data\\Entities\\EffectEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:48.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CollageImageEntity.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Entities\\CollageImageEntity.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\Entities\\CollageImageEntity.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Entities\\CollageImageEntity.cs",
+              "RelativeToolTip": "Lumina.Data\\Entities\\CollageImageEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:46.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CollageEntity.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Entities\\CollageEntity.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\Entities\\CollageEntity.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Entities\\CollageEntity.cs",
+              "RelativeToolTip": "Lumina.Data\\Entities\\CollageEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:45.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ImageLayer.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\ImageLayer.cs",
+              "RelativeDocumentMoniker": "Lumina.Core\\Models\\ImageLayer.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\ImageLayer.cs",
+              "RelativeToolTip": "Lumina.Core\\Models\\ImageLayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:43.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Image.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\Image.cs",
+              "RelativeDocumentMoniker": "Lumina.Core\\Models\\Image.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\Image.cs",
+              "RelativeToolTip": "Lumina.Core\\Models\\Image.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:41.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Effect.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\Effect.cs",
+              "RelativeDocumentMoniker": "Lumina.Core\\Models\\Effect.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\Effect.cs",
+              "RelativeToolTip": "Lumina.Core\\Models\\Effect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:40.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CollageImage.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\CollageImage.cs",
+              "RelativeDocumentMoniker": "Lumina.Core\\Models\\CollageImage.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\CollageImage.cs",
+              "RelativeToolTip": "Lumina.Core\\Models\\CollageImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:38.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Collage.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\Collage.cs",
+              "RelativeDocumentMoniker": "Lumina.Core\\Models\\Collage.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\Collage.cs",
+              "RelativeToolTip": "Lumina.Core\\Models\\Collage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T16:45:36.672Z",
+              "EditorCaption": ""
             }
           ]
         }
