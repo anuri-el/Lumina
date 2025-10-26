@@ -4,8 +4,13 @@
     {
         public int Id { get; set; }
         public string Title { get; set; } = string.Empty;
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public int Width { get; set; } = 1920;
+        public int Height { get; set; } = 1080;
+        public List<ImageLayer> Layers { get; set; } = new();
 
-        public ICollection<CollageImage>? CollageImages { get; set; }
+        public void AddLayer(ImageLayer layer)
+        {
+            Layers.Add(layer);
+        }
     }
 }
