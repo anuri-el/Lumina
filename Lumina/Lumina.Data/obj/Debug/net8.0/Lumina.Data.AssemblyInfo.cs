@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lumina.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd26c14a76b14b13e517f6924d28fb25260071dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffdf40ac3ac668cde328b812c357b4623483b10a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lumina.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lumina.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

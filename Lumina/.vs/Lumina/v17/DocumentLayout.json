@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\interfaces\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\interfaces\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\interfaces\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\interfaces\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\luminacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\luminacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\interfaces\\ieffectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\interfaces\\ieffectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\interfaces\\icollageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\interfaces\\icollageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\interfaces\\icollagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\interfaces\\icollagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,54 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IService.cs",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Interfaces\\IService.cs",
-              "RelativeDocumentMoniker": "Lumina.Core\\Interfaces\\IService.cs",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Interfaces\\IService.cs",
-              "RelativeToolTip": "Lumina.Core\\Interfaces\\IService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "LuminaContext.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\LuminaContext.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\LuminaContext.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\LuminaContext.cs",
+              "RelativeToolTip": "Lumina.Data\\LuminaContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T18:41:52.609Z",
+              "WhenOpened": "2025-10-26T20:17:38.964Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IImageService.cs",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Interfaces\\IImageService.cs",
-              "RelativeDocumentMoniker": "Lumina.Core\\Interfaces\\IImageService.cs",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Interfaces\\IImageService.cs",
-              "RelativeToolTip": "Lumina.Core\\Interfaces\\IImageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Lumina.Data\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T18:41:51.283Z",
+              "WhenOpened": "2025-10-26T20:02:30.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IEffectService.cs",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Interfaces\\IEffectService.cs",
-              "RelativeDocumentMoniker": "Lumina.Core\\Interfaces\\IEffectService.cs",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Interfaces\\IEffectService.cs",
-              "RelativeToolTip": "Lumina.Core\\Interfaces\\IEffectService.cs",
+              "Title": "ICollageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Interfaces\\ICollageRepository.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\Interfaces\\ICollageRepository.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\Interfaces\\ICollageRepository.cs",
+              "RelativeToolTip": "Lumina.Data\\Interfaces\\ICollageRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T18:41:49.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICollageService.cs",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Interfaces\\ICollageService.cs",
-              "RelativeDocumentMoniker": "Lumina.Core\\Interfaces\\ICollageService.cs",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Interfaces\\ICollageService.cs",
-              "RelativeToolTip": "Lumina.Core\\Interfaces\\ICollageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T18:41:48.113Z",
+              "WhenOpened": "2025-10-26T19:58:45.088Z",
               "EditorCaption": ""
             }
           ]
