@@ -1,4 +1,4 @@
-﻿using Lumina.Data.Interfaces;
+﻿using Lumina.Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
