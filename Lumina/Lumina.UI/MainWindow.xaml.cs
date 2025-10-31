@@ -1,4 +1,5 @@
 ﻿using Lumina.UI.Services;
+using Lumina.UI.ViewModels;
 using Lumina.UI.Views;
 using System.Windows;
 
@@ -15,6 +16,8 @@ namespace Lumina.UI
             _navigationService = new NavigationService(MainFrame);
 
             var homePage = new HomePage();
+            homePage.DataContext = new HomeViewModel(_navigationService);
+
             MainFrame.Navigate(homePage);
         }
     }

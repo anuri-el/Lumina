@@ -6,25 +6,30 @@
         xmlns:local="clr-namespace:Lumina.UI.Views"
         mc:Ignorable="d"
         Title="EditorPage" Height="450" Width="800">
-    <Grid Background="White">
-        <TextBlock Text="Image Editor Page" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+    <Grid Background="#eeeeee">
         <!-- 
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Editor Page" FontSize="22" FontWeight="Bold" Margin="0,0,0,20"/>
+            <Image x:Name="PreviewImage" Width="400" Height="300" Stretch="Uniform"/>
+            <TextBlock x:Name="InfoText" Text="No image loaded" Margin="0,20,0,0" TextAlignment="Center"/>
+        </StackPanel>
+        -->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        
-        <StackPanel Background="#efefef" Grid.Column="0">
-            <TextBlock Text="Інструменти" FontWeight="Bold" Margin="0 0 0 8" />
-            <Button Content="Обернути" Command="{Binding RotateCommand}" />
-            <Button Content="Масштабувати" Command="{Binding ScaleCommand}" />
-            <Button Content="Ефект" Command="{Binding ApplyEffectCommand}" />
+
+        <StackPanel Background="#efefef" Grid.Column="0" >
+            <TextBlock Text="Інструменти" FontWeight="Bold" Margin="0 0 0 8"/>
+            <Button Content="Обернути" Command="{Binding RotateCommand}"/>
+            <Button Content="Масштабувати" Command="{Binding ScaleCommand}"/>
+            <Button Content="Ефект" Command="{Binding ApplyEffectCommand}"/>
             <Button Content="Зберегти" Command="{Binding SaveCommand}" />
         </StackPanel>
 
-        <Canvas Grid.Column="1" Background="WhiteSmoke">
-            <Image Source="{Binding CurrentImagePath}" Stretch="Uniform" RenderTransform="{Binding CurrentTransform}" />
+        <Canvas Grid.Column="1" Background="White">
+            <Image x:Name="PreviewImage" Width="400" Height="300" Stretch="Uniform"/>
+            <TextBlock x:Name="InfoText" Text="No image loaded" Margin="0,330,0,0" TextAlignment="Center"/>
         </Canvas>
-        -->
     </Grid>
 </Page>

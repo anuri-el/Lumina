@@ -1,29 +1,54 @@
 ﻿using Lumina.UI.Commands;
 using Lumina.UI.Services;
-using Lumina.UI.Views;
 using System.Windows.Input;
 
 namespace Lumina.UI.ViewModels
 {
     public class HomeViewModel
     {
-        private readonly NavigationService _navigation;
+        private readonly NavigationService _navigationService;
 
         public ICommand OpenImageCommand { get; }
-        public ICommand NewCollageCommand { get; }
+        public ICommand CreateCollageCommand { get; }
         public ICommand GoToEditorCommand { get; }
+        public ICommand ExitCommand { get; }
 
-        public HomeViewModel(NavigationService navigation)
+        public HomeViewModel(NavigationService navigationService)
         {
-            _navigation = navigation;
+            _navigationService = navigationService;
+
             OpenImageCommand = new RelayCommand(OpenImage);
-            NewCollageCommand = new RelayCommand(CreateCollage);
-            GoToEditorCommand = new RelayCommand(() =>
-                _navigation.Navigate(new EditorPage())
-            );
+            CreateCollageCommand = new RelayCommand(CreateCollage);
+            GoToEditorCommand = new RelayCommand(GoToEditor);
+            ExitCommand = new RelayCommand(ExitApp);
         }
 
-        private void OpenImage() { }
-        private void CreateCollage() { }
+        private void OpenImage()
+        {
+            var dialog = new Microsoft.Win32.OpenFileDialog
+            {
+                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif"
+            };
+
+            if (dialog.ShowDialog() == true)
+            {
+                _navigationService.NavigateTo($"EditorPage?file={dialog.FileName}");
+            }
+        }
+
+        private void CreateCollage()
+        {
+            _navigationService.NavigateTo("EditorPage?collage=new");
+        }
+
+        private void GoToEditor()
+        {
+            _navigationService.NavigateTo("EditorPage");
+        }
+
+        private void ExitApp()
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
     }
 }

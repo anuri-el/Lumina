@@ -33,8 +33,8 @@ namespace Lumina.UI.ViewModels
             CurrentTransform = new ScaleTransform(factor, factor);
         }
 
-        private void ApplyEffect() { }
+        private void ApplyEffect() { /* TODO: виклик через IEffectService */ }
 
-        private void SaveImage() { }
+        private void SaveImage() { /* TODO: зберегти через IImageService */ }
     }
 }
