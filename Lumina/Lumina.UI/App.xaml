@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:Lumina.UI"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="Padding" Value="8,4"/>
+        </Style>
     </Application.Resources>
 </Application>

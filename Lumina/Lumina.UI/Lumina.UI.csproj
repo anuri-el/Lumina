@@ -13,4 +13,10 @@
     <ProjectReference Include="..\Lumina.Data\Lumina.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="Views\HomePage.xaml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
 </Project>
