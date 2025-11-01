@@ -8,13 +8,12 @@
         Title="HomePage" Height="450" Width="800">
     <Grid Background="#f2f2f2" VerticalAlignment="Center" HorizontalAlignment="Center">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
-            <TextBlock Text="Lumina Editor" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" />
-            <Button Content="Open Editor" Width="220" Height="40" Click="OpenEditor_Click" />
-            <!-- 
-            <Button Content="Відкрити зображення" Command="{Binding OpenImageCommand}" Height="40" />
-            <Button Content="Новий колаж" Command="{Binding OpenImageCommand}" Height="40" />
-            <Button Content="Перейти до редактора" Command="{Binding OpenImageCommand}" Height="40" />
--->
+            <TextBlock Text="Lumina Editor" FontSize="28" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,20" />
+
+            <Button Content="Open Image" Command="{Binding OpenImageCommand}" Height="40" />
+            <Button Content="Create Collage" Command="{Binding CreateCollageCommand}" Height="40" />
+            <Button Content="Go to Editor" Command="{Binding GoToEditorCommand}" Height="40" />
+            <Button Content="Exit" Command="{Binding ExitCommand}" Height="40" />
         </StackPanel>
         
     </Grid>

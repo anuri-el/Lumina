@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\views\\editorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\views\\editorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\views\\editorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\views\\editorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,22 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\views\\editorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\views\\editorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\views\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\views\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\views\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\views\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\views\\editorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\views\\editorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,110 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "EditorPage.xaml",
               "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Views\\EditorPage.xaml",
               "RelativeDocumentMoniker": "Lumina.UI\\Views\\EditorPage.xaml",
               "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Views\\EditorPage.xaml",
               "RelativeToolTip": "Lumina.UI\\Views\\EditorPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-31T09:15:23.686Z"
+              "WhenOpened": "2025-10-31T09:49:58.168Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "HomeViewModel.cs",
               "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\ViewModels\\HomeViewModel.cs",
               "RelativeDocumentMoniker": "Lumina.UI\\ViewModels\\HomeViewModel.cs",
               "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\ViewModels\\HomeViewModel.cs",
               "RelativeToolTip": "Lumina.UI\\ViewModels\\HomeViewModel.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAcwB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T09:09:49.421Z"
+              "WhenOpened": "2025-10-31T09:47:34.743Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "NavigationService.cs",
               "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Services\\NavigationService.cs",
               "RelativeDocumentMoniker": "Lumina.UI\\Services\\NavigationService.cs",
               "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Services\\NavigationService.cs",
               "RelativeToolTip": "Lumina.UI\\Services\\NavigationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwDEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T09:03:19.784Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Views\\HomePage.xaml.cs",
-              "RelativeDocumentMoniker": "Lumina.UI\\Views\\HomePage.xaml.cs",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Views\\HomePage.xaml.cs",
-              "RelativeToolTip": "Lumina.UI\\Views\\HomePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T09:47:23.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\App.xaml",
-              "RelativeDocumentMoniker": "Lumina.UI\\App.xaml",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\App.xaml",
-              "RelativeToolTip": "Lumina.UI\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-31T09:41:40.255Z",
+              "WhenOpened": "2025-10-31T09:47:09.558Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Lumina.UI\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\MainWindow.xaml",
-              "RelativeToolTip": "Lumina.UI\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-31T09:43:01.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Lumina.UI\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Lumina.UI\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T09:43:50.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomePage.xaml",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Views\\HomePage.xaml",
-              "RelativeDocumentMoniker": "Lumina.UI\\Views\\HomePage.xaml",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Views\\HomePage.xaml",
-              "RelativeToolTip": "Lumina.UI\\Views\\HomePage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-31T09:06:59.238Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "EditorPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Views\\EditorPage.xaml.cs",
               "RelativeDocumentMoniker": "Lumina.UI\\Views\\EditorPage.xaml.cs",
               "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Views\\EditorPage.xaml.cs",
               "RelativeToolTip": "Lumina.UI\\Views\\EditorPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA8wBUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T09:47:46.872Z"
+              "WhenOpened": "2025-10-31T09:44:05.857Z",
+              "EditorCaption": ""
             }
           ]
         }
