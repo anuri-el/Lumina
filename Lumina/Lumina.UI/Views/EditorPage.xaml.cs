@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using Lumina.UI.States;
+using System.IO;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 
@@ -6,9 +8,12 @@ namespace Lumina.UI.Views
 {
     public partial class EditorPage : Page
     {
+        private readonly EditorContext _context = new EditorContext();
+
         public EditorPage()
         {
             InitializeComponent();
+            Log($"Current state: {_context.State.Name}");
         }
 
         public void OnNavigated(string query)
@@ -36,6 +41,29 @@ namespace Lumina.UI.Views
             {
                 System.Windows.MessageBox.Show($"Error opening image: {ex.Message}");
             }
+        }
+
+        private void Normal_Click(object sender, RoutedEventArgs e)
+        {
+            _context.SetState(new NormalState());
+            Log(_context.PerformAction());
+        }
+
+        private void Edit_Click(object sender, RoutedEventArgs e)
+        {
+            _context.SetState(new EditState());
+            Log(_context.PerformAction());
+        }
+
+        private void Preview_Click(object sender, RoutedEventArgs e)
+        {
+            _context.SetState(new PreviewState());
+            Log(_context.PerformAction());
+        }
+
+        private void Log(string message)
+        {
+            LogBox.Items.Add(message);
         }
     }
 }

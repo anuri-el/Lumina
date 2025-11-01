@@ -23,6 +23,7 @@ C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\obj\Debug\net8.0-windows\MainW
 C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\obj\Debug\net8.0-windows\Views\EditorPage.g.cs
 C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\obj\Debug\net8.0-windows\Views\HomePage.g.cs
 C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\obj\Debug\net8.0-windows\Lumina.UI_MarkupCompile.cache
 C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\obj\Debug\net8.0-windows\Lumina.UI_MarkupCompile.lref
 C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\obj\Debug\net8.0-windows\App.baml

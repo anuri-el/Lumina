@@ -3,9 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:Lumina.UI.ViewModels"
         xmlns:local="clr-namespace:Lumina.UI.Views"
         mc:Ignorable="d"
         Title="EditorPage" Height="450" Width="800">
+
+    <Page.DataContext>
+        <vm:EditorViewModel />
+    </Page.DataContext>
+
     <Grid Background="#eeeeee">
         <!-- 
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -21,15 +27,24 @@
 
         <StackPanel Background="#efefef" Grid.Column="0" >
             <TextBlock Text="Інструменти" FontWeight="Bold" Margin="0 0 0 8"/>
-            <Button Content="Обернути" Command="{Binding RotateCommand}"/>
-            <Button Content="Масштабувати" Command="{Binding ScaleCommand}"/>
-            <Button Content="Ефект" Command="{Binding ApplyEffectCommand}"/>
-            <Button Content="Зберегти" Command="{Binding SaveCommand}" />
+            <Button Content="Rotate" Command="{Binding RotateCommand}"/>
+            <Button Content="Scale" Command="{Binding ScaleCommand}"/>
+            <Button Content="Effect" Command="{Binding ApplyEffectCommand}"/>
+            <Button Content="Save" Command="{Binding SaveCommand}" />
+
+            <Button Content="Normal" Click="Normal_Click"/>
+            <Button Content="Edit" Click="Edit_Click"/>
+            <Button Content="Preview" Click="Preview_Click"/>
         </StackPanel>
 
         <Canvas Grid.Column="1" Background="White">
-            <Image x:Name="PreviewImage" Width="400" Height="300" Stretch="Uniform"/>
-            <TextBlock x:Name="InfoText" Text="No image loaded" Margin="0,330,0,0" TextAlignment="Center"/>
+            <TextBlock x:Name="InfoText" Text="No image loaded" Margin="5,5,0,0" TextAlignment="Center"/>
+            <Image x:Name="PreviewImage" Width="400" Height="300" Stretch="Uniform" Margin="5,25,0,0"/>
         </Canvas>
+
+        <Border BorderBrush="Gray" BorderThickness="1" Padding="10">
+            <ListBox x:Name="LogBox" Margin="190,320,-610,-10"/>
+        </Border>
+
     </Grid>
 </Page>
