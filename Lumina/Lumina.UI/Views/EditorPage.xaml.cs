@@ -1,4 +1,5 @@
 ﻿using Lumina.UI.States;
+using Lumina.UI.ViewModels;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
@@ -8,12 +9,16 @@ namespace Lumina.UI.Views
 {
     public partial class EditorPage : Page
     {
+        public EditorRootViewModel ViewModel { get; }
+
         private readonly EditorContext _context = new EditorContext();
 
         public EditorPage()
         {
             InitializeComponent();
             Log($"Current state: {_context.State.Name}");
+            ViewModel = new EditorRootViewModel();
+            DataContext = ViewModel;
         }
 
         public void OnNavigated(string query)

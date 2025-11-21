@@ -11,20 +11,48 @@
       "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\views\\editorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\states\\editoecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\states\\editoecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.data\\luminacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78027FF9-A8C4-444E-8A65-58237A3B4A62}|Lumina.Data\\Lumina.Data.csproj|solutionrelative:lumina.data\\luminacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\states\\prewiestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\states\\prewiestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\effects\\blureffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\effects\\blureffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\states\\editstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\states\\editstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\viewmodels\\editorpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\viewmodels\\editorpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\states\\normalstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\states\\normalstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\viewmodels\\editorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\viewmodels\\editorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\views\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\views\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\viewmodels\\editorrootviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\viewmodels\\editorrootviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\models\\imagelayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\models\\imagelayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\services\\editorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|solutionrelative:lumina.ui\\services\\editorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\patterns\\iprototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\patterns\\iprototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\patterns\\ieditorstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\patterns\\ieditorstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.core\\models\\effect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{421595C0-BF4B-46CC-8B4A-48B8BBE42EF9}|Lumina.Core\\Lumina.Core.csproj|solutionrelative:lumina.core\\models\\effect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08DFDD87-709A-4B48-82A5-B2E5651FC743}|Lumina.UI\\Lumina.UI.csproj|c:\\users\\psa\\source\\repos\\lumina\\lumina\\lumina.ui\\states\\ieditorstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +66,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LuminaContext.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\LuminaContext.cs",
+              "RelativeDocumentMoniker": "Lumina.Data\\LuminaContext.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Data\\LuminaContext.cs",
+              "RelativeToolTip": "Lumina.Data\\LuminaContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T09:50:40.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BlurEffect.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Effects\\BlurEffect.cs",
+              "RelativeDocumentMoniker": "Lumina.Core\\Effects\\BlurEffect.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Effects\\BlurEffect.cs",
+              "RelativeToolTip": "Lumina.Core\\Effects\\BlurEffect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T09:43:12.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditorPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\ViewModels\\EditorPageViewModel.cs",
+              "RelativeDocumentMoniker": "Lumina.UI\\ViewModels\\EditorPageViewModel.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\ViewModels\\EditorPageViewModel.cs",
+              "RelativeToolTip": "Lumina.UI\\ViewModels\\EditorPageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T10:14:41.374Z"
             },
             {
               "$type": "Document",
@@ -52,9 +116,9 @@
               "RelativeDocumentMoniker": "Lumina.UI\\Views\\EditorPage.xaml.cs",
               "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Views\\EditorPage.xaml.cs",
               "RelativeToolTip": "Lumina.UI\\Views\\EditorPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T03:30:33.799Z"
+              "WhenOpened": "2025-11-21T10:30:54.92Z"
             },
             {
               "$type": "Document",
@@ -65,60 +129,108 @@
               "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Views\\EditorPage.xaml",
               "RelativeToolTip": "Lumina.UI\\Views\\EditorPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-01T03:27:47.477Z",
+              "WhenOpened": "2025-11-21T10:31:06.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditoeContext.cs",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\States\\EditoeContext.cs",
-              "RelativeDocumentMoniker": "Lumina.UI\\States\\EditoeContext.cs",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\States\\EditoeContext.cs",
-              "RelativeToolTip": "Lumina.UI\\States\\EditoeContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T03:26:59.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PrewieState.cs",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\States\\PrewieState.cs",
-              "RelativeDocumentMoniker": "Lumina.UI\\States\\PrewieState.cs",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\States\\PrewieState.cs",
-              "RelativeToolTip": "Lumina.UI\\States\\PrewieState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T03:26:20.669Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EditState.cs",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\States\\EditState.cs",
-              "RelativeDocumentMoniker": "Lumina.UI\\States\\EditState.cs",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\States\\EditState.cs",
-              "RelativeToolTip": "Lumina.UI\\States\\EditState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T03:25:39.392Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "NormalState.cs",
-              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\States\\NormalState.cs",
-              "RelativeDocumentMoniker": "Lumina.UI\\States\\NormalState.cs",
-              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\States\\NormalState.cs",
-              "RelativeToolTip": "Lumina.UI\\States\\NormalState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Title": "EditorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\ViewModels\\EditorViewModel.cs",
+              "RelativeDocumentMoniker": "Lumina.UI\\ViewModels\\EditorViewModel.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\ViewModels\\EditorViewModel.cs",
+              "RelativeToolTip": "Lumina.UI\\ViewModels\\EditorViewModel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T03:25:07.793Z"
+              "WhenOpened": "2025-11-21T09:43:07.81Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "HomePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Views\\HomePage.xaml.cs",
+              "RelativeDocumentMoniker": "Lumina.UI\\Views\\HomePage.xaml.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Views\\HomePage.xaml.cs",
+              "RelativeToolTip": "Lumina.UI\\Views\\HomePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T09:54:13.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditorRootViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\ViewModels\\EditorRootViewModel.cs",
+              "RelativeDocumentMoniker": "Lumina.UI\\ViewModels\\EditorRootViewModel.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\ViewModels\\EditorRootViewModel.cs",
+              "RelativeToolTip": "Lumina.UI\\ViewModels\\EditorRootViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T10:37:27.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ImageLayer.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\ImageLayer.cs",
+              "RelativeDocumentMoniker": "Lumina.Core\\Models\\ImageLayer.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\ImageLayer.cs",
+              "RelativeToolTip": "Lumina.Core\\Models\\ImageLayer.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T10:21:05.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EditorService.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Services\\EditorService.cs",
+              "RelativeDocumentMoniker": "Lumina.UI\\Services\\EditorService.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Services\\EditorService.cs",
+              "RelativeToolTip": "Lumina.UI\\Services\\EditorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T10:20:27.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IPrototype.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Patterns\\IPrototype.cs",
+              "RelativeDocumentMoniker": "Lumina.Core\\Patterns\\IPrototype.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Patterns\\IPrototype.cs",
+              "RelativeToolTip": "Lumina.Core\\Patterns\\IPrototype.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T10:08:06.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IEditorState.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Patterns\\IEditorState.cs",
+              "RelativeDocumentMoniker": "Lumina.Core\\Patterns\\IEditorState.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Patterns\\IEditorState.cs",
+              "RelativeToolTip": "Lumina.Core\\Patterns\\IEditorState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T10:07:09.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Effect.cs",
+              "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\Effect.cs",
+              "RelativeDocumentMoniker": "Lumina.Core\\Models\\Effect.cs",
+              "ToolTip": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.Core\\Models\\Effect.cs",
+              "RelativeToolTip": "Lumina.Core\\Models\\Effect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T10:06:43.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "IEditorState.cs",
               "DocumentMoniker": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\States\\IEditorState.cs",
               "RelativeDocumentMoniker": "Lumina.UI\\States\\IEditorState.cs",

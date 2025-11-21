@@ -46,5 +46,21 @@ namespace Lumina.Core.Services
                 await _repository.UpdateAsync(collage);
             }
         }
+        public async Task DuplicateLayer(int collageId, int layerId)
+        {
+            var collage = await GetByIdAsync(collageId);
+            if (collage == null) return;
+
+            var layer = collage.Layers.FirstOrDefault(l => l.Id == layerId);
+            if (layer == null) return;
+
+            var clone = layer.Clone();
+            clone.X += 20;
+            clone.Y += 20;
+
+            collage.Layers.Add(clone);
+
+            await UpdateAsync(collage);
+        }
     }
 }
