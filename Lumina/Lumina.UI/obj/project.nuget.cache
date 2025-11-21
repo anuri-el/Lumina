@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GuYyFn6+wQs=",
+  "dgSpecHash": "iLPJWMvAstE=",
   "success": true,
   "projectFilePath": "C:\\Users\\psa\\source\\repos\\Lumina\\Lumina\\Lumina.UI\\Lumina.UI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\psa\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\psa\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.10\\microsoft.entityframeworkcore.9.0.10.nupkg.sha512",
     "C:\\Users\\psa\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.10\\microsoft.entityframeworkcore.abstractions.9.0.10.nupkg.sha512",
     "C:\\Users\\psa\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.10\\microsoft.entityframeworkcore.analyzers.9.0.10.nupkg.sha512",

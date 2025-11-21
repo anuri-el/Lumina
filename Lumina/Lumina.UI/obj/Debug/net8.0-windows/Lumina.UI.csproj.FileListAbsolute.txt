@@ -41,3 +41,4 @@ C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\obj\Debug\net8.0-windows\refin
 C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\obj\Debug\net8.0-windows\Lumina.UI.pdb
 C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\obj\Debug\net8.0-windows\Lumina.UI.genruntimeconfig.cache
 C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\obj\Debug\net8.0-windows\ref\Lumina.UI.dll
+C:\Users\psa\source\repos\Lumina\Lumina\Lumina.UI\bin\Debug\net8.0-windows\CommunityToolkit.Mvvm.dll
