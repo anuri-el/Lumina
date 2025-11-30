@@ -1,6 +1,8 @@
 ﻿using Lumina.Core.Facade;
+using Lumina.Core.Models;
 using Lumina.Core.Patterns;
 using Lumina.UI.Commands;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
@@ -28,6 +30,15 @@ namespace Lumina.UI.ViewModels
         public ICommand SelectCommand { get; }
         public ICommand CropCommand { get; }
         public ICommand DrawCommand { get; }
+        public IImageComponent RootComponent { get; private set; }
+
+        public ObservableCollection<IImageComponent> Layers { get; set; } = new();
+
+        public ICommand AddLayerCommand { get; }
+        public ICommand AddGroupCommand { get; }
+        public ICommand ApplyBlurCommand { get; }
+        public ICommand DuplicateLayerCommand { get; }
+
 
         public EditorViewModel()
         {
@@ -41,6 +52,49 @@ namespace Lumina.UI.ViewModels
             ScaleCommand = new RelayCommand(() => ScaleImage(1.1));
             ApplyEffectCommand = new RelayCommand(ApplyEffect);
             SaveCommand = new RelayCommand(SaveImage);
+
+            RootComponent = new LayerGroup("Root");
+
+            AddLayerCommand = new RelayCommand(AddLayer);
+            AddGroupCommand = new RelayCommand(AddGroup);
+            ApplyBlurCommand = new RelayCommand(ApplyBlur);
+            DuplicateLayerCommand = new RelayCommand(DuplicateSelectedLayer);
+        }
+
+        private void AddLayer()
+        {
+            var newLayer = new ImageLeaf($"Layer {Layers.Count + 1}", new ImageLayer { Width = 100, Height = 100 });
+            (RootComponent as LayerGroup)?.Add(newLayer);
+            Layers.Add(newLayer);
+        }
+
+        private void AddGroup()
+        {
+            var group = new LayerGroup($"Group {Layers.Count + 1}");
+            (RootComponent as LayerGroup)?.Add(group);
+            Layers.Add(group);
+        }
+
+        private async void ApplyBlur()
+        {
+            foreach (var layer in Layers)
+            {
+                await layer.ApplyEffectAsync("Blur", "radius=5");
+            }
+        }
+
+        private void DuplicateSelectedLayer()
+        {
+            // Приклад дублювання першого шару
+            if (Layers.Count == 0) return;
+
+            var first = Layers[0];
+            if (first is ImageLeaf leaf)
+            {
+                var clone = new ImageLeaf($"{leaf.Name} Copy", leaf.Layer.Clone());
+                (RootComponent as LayerGroup)?.Add(clone);
+                Layers.Add(clone);
+            }
         }
 
         private void AppendLog(string message)
