@@ -10,7 +10,7 @@ namespace Lumina.Core.EditorLogic
         public void Push(EditorMemento state)
         {
             _undoStack.Push(state);
-            _redoStack.Clear(); // після нового кроку redo немає
+            _redoStack.Clear();
         }
 
         public EditorMemento? Undo()

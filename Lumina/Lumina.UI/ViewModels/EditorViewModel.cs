@@ -1,4 +1,5 @@
-﻿using Lumina.Core.Patterns;
+﻿using Lumina.Core.Facade;
+using Lumina.Core.Patterns;
 using Lumina.UI.Commands;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -19,6 +20,7 @@ namespace Lumina.UI.ViewModels
         }
         public string CurrentImagePath { get; set; } = "";
         public Transform CurrentTransform { get; set; } = new RotateTransform(0);
+        private readonly ImageFacade _imageFacade;
         public ICommand RotateCommand { get; }
         public ICommand ScaleCommand { get; }
         public ICommand ApplyEffectCommand { get; }
@@ -40,6 +42,7 @@ namespace Lumina.UI.ViewModels
             ApplyEffectCommand = new RelayCommand(ApplyEffect);
             SaveCommand = new RelayCommand(SaveImage);
         }
+
         private void AppendLog(string message)
         {
             LogText += message + "\n";

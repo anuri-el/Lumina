@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lumina.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74ac0bff3389c4d3d52761b098ef83b8d6d4084b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5aed9fb73104c42b947a74780c1cbbec25cb93a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lumina.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lumina.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

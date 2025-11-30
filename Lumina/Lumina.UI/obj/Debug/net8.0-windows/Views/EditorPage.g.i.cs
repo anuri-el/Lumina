@@ -78,7 +78,7 @@ namespace Lumina.UI.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Lumina.UI;V1.0.0.0;component/views/editorpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Lumina.UI;component/views/editorpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\EditorPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -6,5 +6,6 @@ namespace Lumina.Core.Interfaces
     {
         Task AddImageToCollageAsync(int collageId, int imageId, double x, double y);
         Task RemoveImageFromCollageAsync(int collageId, int imageId);
+        Task DuplicateLayer(int collageId, int layerId);
     }
 }
