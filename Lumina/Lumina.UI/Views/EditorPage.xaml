@@ -21,10 +21,9 @@
 
         <StackPanel Background="#efefef" Grid.Column="0" >
             <TextBlock Text="Інструменти" FontWeight="Bold" Margin="0 0 0 8"/>
+            <Button Content="Save" Command="{Binding SaveCommand}" />
             <Button Content="Rotate" Command="{Binding RotateCommand}"/>
             <Button Content="Scale" Command="{Binding ScaleCommand}"/>
-            <Button Content="Effect" Command="{Binding ApplyEffectCommand}"/>
-            <Button Content="Save" Command="{Binding SaveCommand}" />
 
             <Button Content="Normal" Click="Normal_Click"/>
             <Button Content="Edit" Click="Edit_Click"/>
@@ -34,50 +33,18 @@
             <Button Content="Blur" Command="{Binding Layers.ApplyBlurCommand}" />
             <Button Content="Grayscale" Command="{Binding Layers.ApplyGrayscaleCommand}" />
             <Button Content="Sepia" Command="{Binding Layers.ApplySepiaCommand}" />
-            
+
+            <Separator/>
+
+            <Button Content="Undo" Click="Undo_Click"/>
+            <Button Content="Redo" Click="Redo_Click"/>
+
         </StackPanel>
-        
+
         <Canvas Grid.Column="1" Background="White">
             <TextBlock x:Name="InfoText" Text="No image loaded" Margin="5,5,0,0" TextAlignment="Center"/>
             <Image x:Name="PreviewImage" Width="400" Height="300" Stretch="Uniform" Margin="5,25,0,0"/>
         </Canvas>
-        <!--
-
-        <Canvas x:Name="EditorCanvas" Grid.Column="1" Background="White">
-            <TextBlock x:Name="InfoText" Text="No image loaded" Margin="5,5,0,0" TextAlignment="Center"/>
-            
-            <Image x:Name="PreviewImage"
-           Width="400"
-           Height="300"
-           Stretch="Fill"/>
-
-            <Rectangle x:Name="SelectionBorder"
-               Stroke="DeepSkyBlue"
-               StrokeThickness="2"
-               StrokeDashArray="4 2"
-               Visibility="Collapsed"/>
-
-            <ItemsControl x:Name="ResizeHandles">
-                <ItemsControl.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <Canvas/>
-                    </ItemsPanelTemplate>
-                </ItemsControl.ItemsPanel>
-
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <Thumb Width="10"
-                       Height="10"
-                       DragDelta="ResizeHandle_DragDelta"
-                       Background="DeepSkyBlue"
-                       BorderBrush="White"
-                       BorderThickness="1"/>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-
-        </Canvas>
-        -->
 
         <Border BorderBrush="Gray" BorderThickness="1" Padding="10">
             <ListBox x:Name="LogBox" Margin="190,320,-610,-10"/>
