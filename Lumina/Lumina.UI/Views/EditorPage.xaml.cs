@@ -13,34 +13,28 @@ namespace Lumina.UI.Views
     {
         public EditorRootViewModel ViewModel { get; }
 
-        private readonly EditorContext _context = new EditorContext();
-
-        private readonly ImageEditorOriginator _editor = new();
-        private readonly EditorHistory _history = new();
-
+        private readonly Lumina.UI.States.EditorContext _stateContext = new();
         private readonly ImageEditorOriginator _originator = new();
+        private readonly EditorHistory _history = new();
 
         private double _imgX = 50;
         private double _imgY = 50;
         private double _imgW = 400;
         private double _imgH = 300;
 
-        private readonly Point[] _handleOffsets =
-        {
-            new(-1,-1), new(0,-1), new(1,-1),
-            new(-1,0),              new(1,0),
-            new(-1,1),  new(0,1),  new(1,1)
-        };
-
         private List<Ellipse> ResizeHandles = new List<Ellipse>();
-        private Image ActiveImage;
+        private Image? ActiveImage;
 
         public EditorPage()
         {
             InitializeComponent();
-            Log($"Current state: {_context.State.Name}");
             ViewModel = new EditorRootViewModel();
             DataContext = ViewModel;
+
+            // Підписуємось на лог з Core.Patterns.EditorContext
+            ViewModel.Tools.Context.OnLog += Log;
+
+            Log($"Current state: {_stateContext.State.Name}");
         }
 
         public void OnNavigated(string query)
@@ -55,60 +49,67 @@ namespace Lumina.UI.Views
 
                     if (key == "file" && File.Exists(value))
                     {
+                        LoadImage(value);
                         PreviewImage.Source = new BitmapImage(new Uri(value));
                         InfoText.Text = $"Opened: {System.IO.Path.GetFileName(value)}";
+                        Log($"Loaded image: {value}");
                     }
                     else if (key == "collage" && value == "new")
                     {
                         InfoText.Text = "New empty collage created.";
+                        Log("Created new collage");
                     }
                 }
             }
             catch (Exception ex)
             {
-                System.Windows.MessageBox.Show($"Error opening image: {ex.Message}");
+                MessageBox.Show($"Error opening image: {ex.Message}");
+                Log($"Error: {ex.Message}");
             }
         }
 
         private void Normal_Click(object sender, RoutedEventArgs e)
         {
-            _context.SetState(new NormalState());
-            Log(_context.PerformAction());
+            _stateContext.SetState(new NormalState());
+            Log(_stateContext.PerformAction());
         }
 
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
-            _context.SetState(new EditState());
-            Log(_context.PerformAction());
+            _stateContext.SetState(new EditState());
+            Log(_stateContext.PerformAction());
         }
 
         private void Preview_Click(object sender, RoutedEventArgs e)
         {
-            _context.SetState(new PreviewState());
-            Log(_context.PerformAction());
+            _stateContext.SetState(new PreviewState());
+            Log(_stateContext.PerformAction());
         }
 
         private void Log(string message)
         {
             LogBox.Items.Add(message);
+            LogBox.ScrollIntoView(LogBox.Items[LogBox.Items.Count - 1]);
         }
 
         private void LoadImage(string path)
         {
-            _editor.SetState(path, 50, 50, 400, 300);
-            _history.Push(_editor.Save());   // зберігаємо початковий стан
+            _originator.SetState(path, 50, 50, 400, 300);
+            _history.Push(_originator.Save());
+            Log("Image state saved to history");
         }
 
-        private void ApplyResize()
+        private void ApplyResize(double widthDelta, double heightDelta)
         {
-            _editor.SetState(
-                _editor.CurrentImagePath,
-                _editor.PosX,
-                _editor.PosY,
-                _editor.Width + 20,
-                _editor.Height + 20);
+            _originator.SetState(
+                _originator.CurrentImagePath,
+                _originator.PosX,
+                _originator.PosY,
+                _originator.Width + widthDelta,
+                _originator.Height + heightDelta);
 
-            _history.Push(_editor.Save());
+            _history.Push(_originator.Save());
+            Log($"Resized image: {_originator.Width}x{_originator.Height}");
         }
 
         private void ApplyEditorStateToUI()
@@ -119,7 +120,13 @@ namespace Lumina.UI.Views
             _imgH = _originator.Height;
 
             if (File.Exists(_originator.CurrentImagePath))
+            {
                 PreviewImage.Source = new BitmapImage(new Uri(_originator.CurrentImagePath));
+                PreviewImage.Width = _imgW;
+                PreviewImage.Height = _imgH;
+                Canvas.SetLeft(PreviewImage, _imgX);
+                Canvas.SetTop(PreviewImage, _imgY);
+            }
 
             UpdateHandles();
         }
@@ -164,17 +171,20 @@ namespace Lumina.UI.Views
             double w = ActiveImage.Width;
             double h = ActiveImage.Height;
 
-            // Точки по кутах
-            MoveHandle(ResizeHandles[0], x - 5, y - 5);               // Лівий верх
-            MoveHandle(ResizeHandles[1], x + w - 5, y - 5);           // Правий верх
-            MoveHandle(ResizeHandles[2], x - 5, y + h - 5);           // Лівий низ
-            MoveHandle(ResizeHandles[3], x + w - 5, y + h - 5);       // Правий низ
+            if (ResizeHandles.Count >= 8)
+            {
+                // Кути
+                MoveHandle(ResizeHandles[0], x - 5, y - 5);               // Лівий верх
+                MoveHandle(ResizeHandles[1], x + w - 5, y - 5);           // Правий верх
+                MoveHandle(ResizeHandles[2], x - 5, y + h - 5);           // Лівий низ
+                MoveHandle(ResizeHandles[3], x + w - 5, y + h - 5);       // Правий низ
 
-            // Точки по центру сторін
-            MoveHandle(ResizeHandles[4], x + w / 2 - 5, y - 5);       // Верх центр
-            MoveHandle(ResizeHandles[5], x + w - 5, y + h / 2 - 5);   // Право центр
-            MoveHandle(ResizeHandles[6], x + w / 2 - 5, y + h - 5);   // Низ центр
-            MoveHandle(ResizeHandles[7], x - 5, y + h / 2 - 5);       // Ліво центр
+                // Центри сторін
+                MoveHandle(ResizeHandles[4], x + w / 2 - 5, y - 5);       // Верх центр
+                MoveHandle(ResizeHandles[5], x + w - 5, y + h / 2 - 5);   // Право центр
+                MoveHandle(ResizeHandles[6], x + w / 2 - 5, y + h - 5);   // Низ центр
+                MoveHandle(ResizeHandles[7], x - 5, y + h / 2 - 5);       // Ліво центр
+            }
         }
 
         private void MoveHandle(Ellipse handle, double left, double top)
