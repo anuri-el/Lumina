@@ -8,13 +8,9 @@
         Title="HomePage" Height="450" Width="800">
     <Grid Background="#f2f2f2" VerticalAlignment="Center" HorizontalAlignment="Center">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
-            <TextBlock Text="Lumina Editor" FontSize="28" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,20" />
-
-            <Button Content="Open Image" Command="{Binding OpenImageCommand}" Height="40" />
-            <Button Content="Create Collage" Command="{Binding CreateCollageCommand}" Height="40" />
-            <Button Content="Go to Editor" Command="{Binding GoToEditorCommand}" Height="40" />
-            <Button Content="Exit" Command="{Binding ExitCommand}" Height="40" />
+            <TextBlock Text="Lumina Editor" FontSize="28" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,30" />
+            <Button Content="Open Editor" Command="{Binding OpenEditorCommand}" Height="50" FontSize="16" Margin="0,0,0,10" />
+            <Button Content="Exit" Command="{Binding ExitCommand}" Height="50" FontSize="16" />
         </StackPanel>
-        
     </Grid>
 </Page>

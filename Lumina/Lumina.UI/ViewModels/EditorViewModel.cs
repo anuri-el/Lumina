@@ -42,6 +42,7 @@ namespace Lumina.UI.ViewModels
         public ICommand SelectCommand { get; }
         public ICommand CropCommand { get; }
         public ICommand DrawCommand { get; }
+        public ICommand OpenImageCommand { get; }
 
         private IImageComponent _rootComponent;
         public IImageComponent RootComponent
@@ -57,6 +58,9 @@ namespace Lumina.UI.ViewModels
         public ICommand ApplyBlurCommand { get; }
         public ICommand DuplicateLayerCommand { get; }
 
+        // Подія для повідомлення View про відкриття зображення
+        public event Action<string>? OnImageOpened;
+
         public EditorViewModel()
         {
             Context = new EditorContext(new SelectState());
@@ -70,6 +74,7 @@ namespace Lumina.UI.ViewModels
             ScaleCommand = new RelayCommand(() => ScaleImage(1.1));
             ApplyEffectCommand = new RelayCommand(ApplyEffect);
             SaveCommand = new RelayCommand(SaveImage);
+            OpenImageCommand = new RelayCommand(OpenImage);
 
             RootComponent = new LayerGroup("Root");
 
@@ -77,6 +82,21 @@ namespace Lumina.UI.ViewModels
             AddGroupCommand = new RelayCommand(AddGroup);
             ApplyBlurCommand = new RelayCommand(ApplyBlur);
             DuplicateLayerCommand = new RelayCommand(DuplicateSelectedLayer);
+        }
+
+        private void OpenImage()
+        {
+            var dialog = new Microsoft.Win32.OpenFileDialog
+            {
+                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif",
+                Title = "Select Image to Add"
+            };
+
+            if (dialog.ShowDialog() == true)
+            {
+                OnImageOpened?.Invoke(dialog.FileName);
+                AppendLog($"Opened image: {System.IO.Path.GetFileName(dialog.FileName)}");
+            }
         }
 
         private void AddLayer()

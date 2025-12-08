@@ -6,85 +6,99 @@
         xmlns:vm="clr-namespace:Lumina.UI.ViewModels"
         xmlns:local="clr-namespace:Lumina.UI.Views"
         mc:Ignorable="d"
-        Title="EditorPage" Height="450" Width="800">
-    <!--
-    <Page.DataContext>
-        <vm:EditorViewModel />
-    </Page.DataContext>
-    -->
-
+        Title="EditorPage" Height="600" Width="900">
     <Grid Background="#eeeeee">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="220"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Background="#efefef" Grid.Column="0" >
-            <TextBlock Text="Інструменти" FontWeight="Bold" Margin="0 0 0 8"/>
-            <Button Content="Save" Command="{Binding SaveCommand}" />
-            <Button Content="Rotate" Command="{Binding RotateCommand}"/>
-            <Button Content="Scale" Command="{Binding ScaleCommand}"/>
+        <!-- Панель інструментів -->
+        <StackPanel Background="#2d2d30" Grid.Column="0" Margin="0,0,5,0">
+            <TextBlock Text="Lumina Editor" FontWeight="Bold" Foreground="White" 
+                       FontSize="18" Margin="10" HorizontalAlignment="Center"/>
 
-            <Button Content="Normal" Click="Normal_Click"/>
-            <Button Content="Edit" Click="Edit_Click"/>
-            <Button Content="Preview" Click="Preview_Click"/>
-            
-            <Button Content="Duplicate Layer" Command="{Binding Layers.DuplicateLayerCommand}" />
-            <Button Content="Blur" Command="{Binding Layers.ApplyBlurCommand}" />
-            <Button Content="Grayscale" Command="{Binding Layers.ApplyGrayscaleCommand}" />
-            <Button Content="Sepia" Command="{Binding Layers.ApplySepiaCommand}" />
+            <Separator Background="#555" Margin="5"/>
 
-            <Separator/>
+            <TextBlock Text="File" FontWeight="Bold" Foreground="#999" Margin="10,10,10,5"/>
+            <Button Content="📁 Open Image" Command="{Binding Tools.OpenImageCommand}" 
+                    Height="35" Margin="10,0" Background="#007acc" Foreground="White" 
+                    FontWeight="SemiBold"/>
+            <Button Content="💾 Save" Command="{Binding Tools.SaveCommand}" 
+                    Height="35" Margin="10,5"/>
 
-            <Button Content="Undo" Click="Undo_Click"/>
-            <Button Content="Redo" Click="Redo_Click"/>
+            <Separator Background="#555" Margin="5,10"/>
 
+            <TextBlock Text="Transform" FontWeight="Bold" Foreground="#999" Margin="10,5,10,5"/>
+            <Button Content="🔄 Rotate" Command="{Binding Tools.RotateCommand}" 
+                    Height="30" Margin="10,0"/>
+            <Button Content="🔍 Scale" Command="{Binding Tools.ScaleCommand}" 
+                    Height="30" Margin="10,5"/>
+
+            <Separator Background="#555" Margin="5,10"/>
+
+            <TextBlock Text="States" FontWeight="Bold" Foreground="#999" Margin="10,5,10,5"/>
+            <Button Content="Normal" Click="Normal_Click" Height="30" Margin="10,0"/>
+            <Button Content="Edit" Click="Edit_Click" Height="30" Margin="10,5"/>
+            <Button Content="Preview" Click="Preview_Click" Height="30" Margin="10,5"/>
+
+            <Separator Background="#555" Margin="5,10"/>
+
+            <TextBlock Text="Effects" FontWeight="Bold" Foreground="#999" Margin="10,5,10,5"/>
+            <Button Content="✨ Blur" Command="{Binding Layers.ApplyBlurCommand}" 
+                    Height="30" Margin="10,0"/>
+            <Button Content="⚫ Grayscale" Command="{Binding Layers.ApplyGrayscaleCommand}" 
+                    Height="30" Margin="10,5"/>
+            <Button Content="🟤 Sepia" Command="{Binding Layers.ApplySepiaCommand}" 
+                    Height="30" Margin="10,5"/>
+
+            <Separator Background="#555" Margin="5,10"/>
+
+            <TextBlock Text="History" FontWeight="Bold" Foreground="#999" Margin="10,5,10,5"/>
+            <Button Content="↶ Undo" Click="Undo_Click" Height="30" Margin="10,0"/>
+            <Button Content="↷ Redo" Click="Redo_Click" Height="30" Margin="10,5"/>
         </StackPanel>
 
-        <Canvas Grid.Column="1" Background="White">
-            <TextBlock x:Name="InfoText" Text="No image loaded" Margin="5,5,0,0" TextAlignment="Center"/>
-            <Image x:Name="PreviewImage" Width="400" Height="300" Stretch="Uniform" Margin="5,25,0,0"/>
-        </Canvas>
+        <!-- Робоча область -->
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="150"/>
+            </Grid.RowDefinitions>
 
-        <Border BorderBrush="Gray" BorderThickness="1" Padding="10">
-            <ListBox x:Name="LogBox" Margin="190,320,-610,-10"/>
-        </Border>
+            <!-- Інформаційна панель -->
+            <Border Grid.Row="0" Background="#3e3e42" BorderBrush="#555" BorderThickness="0,0,0,1">
+                <TextBlock x:Name="InfoText" Text="Ready to create collage" 
+                           Foreground="White" VerticalAlignment="Center" 
+                           Margin="15,0" FontSize="14"/>
+            </Border>
 
+            <!-- Canvas для колажу -->
+            <Border Grid.Row="1" Background="White" BorderBrush="#ccc" BorderThickness="1" Margin="5">
+                <Canvas x:Name="MainCanvas" Background="#f5f5f5">
+                    <!-- Зображення будуть додаватися сюди динамічно -->
+                </Canvas>
+            </Border>
+
+            <!-- Панель логів -->
+            <Border Grid.Row="2" Background="#1e1e1e" BorderBrush="#555" BorderThickness="0,1,0,0" Margin="5,0,5,5">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Activity Log" Grid.Row="0" Foreground="#999" 
+                               Margin="10,5" FontWeight="SemiBold"/>
+
+                    <ListBox x:Name="LogBox" Grid.Row="1" Background="#1e1e1e" 
+                             Foreground="#dcdcdc" BorderThickness="0" 
+                             ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                             ScrollViewer.VerticalScrollBarVisibility="Auto"
+                             Margin="5"/>
+                </Grid>
+            </Border>
+        </Grid>
     </Grid>
-    
-    <!-- 
-
-    <Grid Background="#eeeeee">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-
-        <StackPanel Background="#efefef" Grid.Column="0" Margin="5">
-            <TextBlock Text="Tools" FontWeight="Bold" Margin="0 0 0 8"/>
-
-            <Button Content="Normal" Command="{Binding Tools.NormalCommand}" />
-            <Button Content="Edit" Command="{Binding Tools.EditCommand}" />
-            <Button Content="Preview" Command="{Binding Tools.PreviewCommand}" />
-
-            <Button Content="Rotate" Command="{Binding Tools.RotateCommand}" />
-            <Button Content="Scale" Command="{Binding Tools.ScaleCommand}" />
-            <Button Content="Save" Command="{Binding Tools.SaveCommand}" />
-
-            <TextBlock Text="Layers / Effects" FontWeight="Bold" Margin="10 20 0 5"/>
-            <Button Content="Duplicate Layer" Command="{Binding Layers.DuplicateLayerCommand}" />
-            <Button Content="Blur" Command="{Binding Layers.ApplyBlurCommand}" />
-            <Button Content="Grayscale" Command="{Binding Layers.ApplyGrayscaleCommand}" />
-            <Button Content="Sepia" Command="{Binding Layers.ApplySepiaCommand}" />
-        </StackPanel>
-
-        <Canvas Grid.Column="1" Background="White">
-            <Image x:Name="PreviewImage" Width="400" Height="300" Stretch="Uniform" Margin="5"/>
-        </Canvas>
-
-        <Border BorderBrush="Gray" BorderThickness="1" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="780" Height="100" Margin="10">
-            <ListBox ItemsSource="{Binding Tools.LogText.Split('\n')}" />
-        </Border>
-    </Grid>
-    -->
 </Page>

@@ -4,6 +4,7 @@ using Lumina.UI.ViewModels;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -17,13 +18,8 @@ namespace Lumina.UI.Views
         private readonly ImageEditorOriginator _originator = new();
         private readonly EditorHistory _history = new();
 
-        private double _imgX = 50;
-        private double _imgY = 50;
-        private double _imgW = 400;
-        private double _imgH = 300;
-
-        private List<Ellipse> ResizeHandles = new List<Ellipse>();
-        private Image? ActiveImage;
+        // Список зображень для колажу
+        private List<CollageImageInfo> _collageImages = new();
 
         public EditorPage()
         {
@@ -33,6 +29,9 @@ namespace Lumina.UI.Views
 
             // Підписуємось на лог з Core.Patterns.EditorContext
             ViewModel.Tools.Context.OnLog += Log;
+
+            // Підписуємось на подію відкриття зображення
+            ViewModel.Tools.OnImageOpened += AddImageToCollage;
 
             Log($"Current state: {_stateContext.State.Name}");
         }
@@ -49,15 +48,8 @@ namespace Lumina.UI.Views
 
                     if (key == "file" && File.Exists(value))
                     {
-                        LoadImage(value);
-                        PreviewImage.Source = new BitmapImage(new Uri(value));
-                        InfoText.Text = $"Opened: {System.IO.Path.GetFileName(value)}";
-                        Log($"Loaded image: {value}");
-                    }
-                    else if (key == "collage" && value == "new")
-                    {
-                        InfoText.Text = "New empty collage created.";
-                        Log("Created new collage");
+                        AddImageToCollage(value);
+                        Log($"Loaded initial image: {value}");
                     }
                 }
             }
@@ -66,6 +58,110 @@ namespace Lumina.UI.Views
                 MessageBox.Show($"Error opening image: {ex.Message}");
                 Log($"Error: {ex.Message}");
             }
+        }
+
+        private void AddImageToCollage(string imagePath)
+        {
+            try
+            {
+                if (!File.Exists(imagePath))
+                {
+                    Log($"File not found: {imagePath}");
+                    return;
+                }
+
+                // Створюємо нове зображення на Canvas
+                var bitmap = new BitmapImage(new Uri(imagePath));
+                var image = new Image
+                {
+                    Source = bitmap,
+                    Width = 200,
+                    Height = 200,
+                    Stretch = Stretch.Uniform
+                };
+
+                // Позиціонуємо зображення з невеликим зсувом від попереднього
+                double offsetX = _collageImages.Count * 20;
+                double offsetY = _collageImages.Count * 20;
+
+                Canvas.SetLeft(image, 50 + offsetX);
+                Canvas.SetTop(image, 50 + offsetY);
+
+                // Додаємо на Canvas
+                MainCanvas.Children.Add(image);
+
+                // Зберігаємо інформацію
+                var collageImage = new CollageImageInfo
+                {
+                    Image = image,
+                    Path = imagePath,
+                    InitialX = 50 + offsetX,
+                    InitialY = 50 + offsetY
+                };
+                _collageImages.Add(collageImage);
+
+                // Зберігаємо стан в історію
+                _originator.SetState(imagePath, 50 + offsetX, 50 + offsetY, 200, 200);
+                _history.Push(_originator.Save());
+
+                InfoText.Text = $"Images in collage: {_collageImages.Count}";
+                Log($"Added image to collage: {System.IO.Path.GetFileName(imagePath)} at position ({50 + offsetX}, {50 + offsetY})");
+
+                // Додаємо можливість переміщення зображення
+                AddDragBehavior(image, collageImage);
+            }
+            catch (Exception ex)
+            {
+                Log($"Error adding image: {ex.Message}");
+                MessageBox.Show($"Error adding image: {ex.Message}");
+            }
+        }
+
+        private void AddDragBehavior(Image image, CollageImageInfo info)
+        {
+            bool isDragging = false;
+            Point clickPosition = new Point();
+
+            image.MouseLeftButtonDown += (s, e) =>
+            {
+                isDragging = true;
+                clickPosition = e.GetPosition(MainCanvas);
+                image.CaptureMouse();
+                Log($"Started dragging image: {System.IO.Path.GetFileName(info.Path)}");
+            };
+
+            image.MouseMove += (s, e) =>
+            {
+                if (isDragging && image.IsMouseCaptured)
+                {
+                    Point currentPosition = e.GetPosition(MainCanvas);
+                    double newX = Canvas.GetLeft(image) + (currentPosition.X - clickPosition.X);
+                    double newY = Canvas.GetTop(image) + (currentPosition.Y - clickPosition.Y);
+
+                    Canvas.SetLeft(image, newX);
+                    Canvas.SetTop(image, newY);
+
+                    clickPosition = currentPosition;
+
+                    info.InitialX = newX;
+                    info.InitialY = newY;
+                }
+            };
+
+            image.MouseLeftButtonUp += (s, e) =>
+            {
+                if (isDragging)
+                {
+                    isDragging = false;
+                    image.ReleaseMouseCapture();
+
+                    // Зберігаємо новий стан в історію
+                    _originator.SetState(info.Path, info.InitialX, info.InitialY, image.Width, image.Height);
+                    _history.Push(_originator.Save());
+
+                    Log($"Moved image to ({info.InitialX:F0}, {info.InitialY:F0})");
+                }
+            };
         }
 
         private void Normal_Click(object sender, RoutedEventArgs e)
@@ -89,46 +185,8 @@ namespace Lumina.UI.Views
         private void Log(string message)
         {
             LogBox.Items.Add(message);
-            LogBox.ScrollIntoView(LogBox.Items[LogBox.Items.Count - 1]);
-        }
-
-        private void LoadImage(string path)
-        {
-            _originator.SetState(path, 50, 50, 400, 300);
-            _history.Push(_originator.Save());
-            Log("Image state saved to history");
-        }
-
-        private void ApplyResize(double widthDelta, double heightDelta)
-        {
-            _originator.SetState(
-                _originator.CurrentImagePath,
-                _originator.PosX,
-                _originator.PosY,
-                _originator.Width + widthDelta,
-                _originator.Height + heightDelta);
-
-            _history.Push(_originator.Save());
-            Log($"Resized image: {_originator.Width}x{_originator.Height}");
-        }
-
-        private void ApplyEditorStateToUI()
-        {
-            _imgX = _originator.PosX;
-            _imgY = _originator.PosY;
-            _imgW = _originator.Width;
-            _imgH = _originator.Height;
-
-            if (File.Exists(_originator.CurrentImagePath))
-            {
-                PreviewImage.Source = new BitmapImage(new Uri(_originator.CurrentImagePath));
-                PreviewImage.Width = _imgW;
-                PreviewImage.Height = _imgH;
-                Canvas.SetLeft(PreviewImage, _imgX);
-                Canvas.SetTop(PreviewImage, _imgY);
-            }
-
-            UpdateHandles();
+            if (LogBox.Items.Count > 0)
+                LogBox.ScrollIntoView(LogBox.Items[LogBox.Items.Count - 1]);
         }
 
         private void Undo_Click(object sender, RoutedEventArgs e)
@@ -137,7 +195,6 @@ namespace Lumina.UI.Views
             if (state != null)
             {
                 _originator.Restore(state);
-                ApplyEditorStateToUI();
                 Log("Undo executed");
             }
             else
@@ -152,7 +209,6 @@ namespace Lumina.UI.Views
             if (state != null)
             {
                 _originator.Restore(state);
-                ApplyEditorStateToUI();
                 Log("Redo executed");
             }
             else
@@ -161,36 +217,13 @@ namespace Lumina.UI.Views
             }
         }
 
-        private void UpdateHandles()
+        // Клас для зберігання інформації про зображення в колажі
+        private class CollageImageInfo
         {
-            if (ActiveImage == null || ResizeHandles == null || ResizeHandles.Count == 0)
-                return;
-
-            double x = Canvas.GetLeft(ActiveImage);
-            double y = Canvas.GetTop(ActiveImage);
-            double w = ActiveImage.Width;
-            double h = ActiveImage.Height;
-
-            if (ResizeHandles.Count >= 8)
-            {
-                // Кути
-                MoveHandle(ResizeHandles[0], x - 5, y - 5);               // Лівий верх
-                MoveHandle(ResizeHandles[1], x + w - 5, y - 5);           // Правий верх
-                MoveHandle(ResizeHandles[2], x - 5, y + h - 5);           // Лівий низ
-                MoveHandle(ResizeHandles[3], x + w - 5, y + h - 5);       // Правий низ
-
-                // Центри сторін
-                MoveHandle(ResizeHandles[4], x + w / 2 - 5, y - 5);       // Верх центр
-                MoveHandle(ResizeHandles[5], x + w - 5, y + h / 2 - 5);   // Право центр
-                MoveHandle(ResizeHandles[6], x + w / 2 - 5, y + h - 5);   // Низ центр
-                MoveHandle(ResizeHandles[7], x - 5, y + h / 2 - 5);       // Ліво центр
-            }
-        }
-
-        private void MoveHandle(Ellipse handle, double left, double top)
-        {
-            Canvas.SetLeft(handle, left);
-            Canvas.SetTop(handle, top);
+            public Image Image { get; set; } = null!;
+            public string Path { get; set; } = "";
+            public double InitialX { get; set; }
+            public double InitialY { get; set; }
         }
     }
 }
