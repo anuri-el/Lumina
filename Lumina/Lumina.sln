@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lumina.UI", "Lumina.UI\Lumi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lumina.Shared", "Lumina.Shared\Lumina.Shared.csproj", "{AA6C9EC3-4419-43CD-A018-7D1EF07823BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lumina.Server", "Lumina.Server\Lumina.Server.csproj", "{7D291062-AB0F-4CBF-B642-240615B17CF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AA6C9EC3-4419-43CD-A018-7D1EF07823BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA6C9EC3-4419-43CD-A018-7D1EF07823BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA6C9EC3-4419-43CD-A018-7D1EF07823BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D291062-AB0F-4CBF-B642-240615B17CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D291062-AB0F-4CBF-B642-240615B17CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D291062-AB0F-4CBF-B642-240615B17CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D291062-AB0F-4CBF-B642-240615B17CF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
