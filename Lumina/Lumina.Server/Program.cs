@@ -1,9 +1,9 @@
-
 using Lumina.Core.Interfaces;
 using Lumina.Core.Services;
 using Lumina.Data;
 using Lumina.Data.Repositories;
 using Lumina.Server.Middleware;
+using Microsoft.EntityFrameworkCore;
 
 namespace Lumina.Server
 {

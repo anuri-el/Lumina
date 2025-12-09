@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Lumina.Core\Lumina.Core.csproj" />
     <ProjectReference Include="..\Lumina.Data\Lumina.Data.csproj" />
+    <ProjectReference Include="..\Lumina.Shared\Lumina.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
