@@ -6,11 +6,11 @@ namespace Lumina.UI.Services
     public class NavigationService
     {
         private readonly Frame _frame;
-
         private readonly Dictionary<string, Uri> _routes = new()
         {
             { "HomePage", new Uri("Views/HomePage.xaml", UriKind.Relative) },
-            { "EditorPage", new Uri("Views/EditorPage.xaml", UriKind.Relative) }
+            { "EditorPage", new Uri("Views/EditorPage.xaml", UriKind.Relative) },
+            { "ServerEditorPage", new Uri("Views/ServerEditorPage.xaml", UriKind.Relative) }
         };
 
         public NavigationService(Frame frame)
@@ -23,7 +23,6 @@ namespace Lumina.UI.Services
             try
             {
                 string pageName = route.Split('?')[0];
-
                 if (_routes.TryGetValue(pageName, out var uri))
                 {
                     // Завантажуємо сторінку з XAML напряму

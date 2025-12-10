@@ -8,18 +8,25 @@ namespace Lumina.UI.ViewModels
     {
         private readonly NavigationService _navigationService;
         public ICommand OpenEditorCommand { get; }
+        public ICommand OpenServerEditorCommand { get; }
         public ICommand ExitCommand { get; }
 
         public HomeViewModel(NavigationService navigationService)
         {
             _navigationService = navigationService;
             OpenEditorCommand = new RelayCommand(OpenEditor);
+            OpenServerEditorCommand = new RelayCommand(OpenServerEditor);
             ExitCommand = new RelayCommand(ExitApp);
         }
 
         private void OpenEditor()
         {
             _navigationService.NavigateTo("EditorPage");
+        }
+
+        private void OpenServerEditor()
+        {
+            _navigationService.NavigateTo("ServerEditorPage");
         }
 
         private void ExitApp()
