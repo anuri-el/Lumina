@@ -31,10 +31,26 @@ namespace Lumina.UI.Services
                 };
 
                 var response = await _httpClient.PostAsJsonAsync("/api/collages", request);
-                response.EnsureSuccessStatusCode();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return new ApiResponse<CollageDto>
+                    {
+                        Success = false,
+                        Message = $"HTTP {response.StatusCode}"
+                    };
+                }
 
                 return await response.Content.ReadFromJsonAsync<ApiResponse<CollageDto>>()
                     ?? new ApiResponse<CollageDto> { Success = false, Message = "Failed to parse response" };
+            }
+            catch (HttpRequestException ex)
+            {
+                return new ApiResponse<CollageDto>
+                {
+                    Success = false,
+                    Message = $"Connection error: {ex.Message}"
+                };
             }
             catch (Exception ex)
             {
@@ -51,10 +67,26 @@ namespace Lumina.UI.Services
             try
             {
                 var response = await _httpClient.GetAsync("/api/collages");
-                response.EnsureSuccessStatusCode();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return new ApiResponse<List<CollageDto>>
+                    {
+                        Success = false,
+                        Message = $"HTTP {response.StatusCode}"
+                    };
+                }
 
                 return await response.Content.ReadFromJsonAsync<ApiResponse<List<CollageDto>>>()
                     ?? new ApiResponse<List<CollageDto>> { Success = false, Message = "Failed to parse response" };
+            }
+            catch (HttpRequestException ex)
+            {
+                return new ApiResponse<List<CollageDto>>
+                {
+                    Success = false,
+                    Message = $"Connection error: {ex.Message}. Make sure server is running on http://localhost:5155"
+                };
             }
             catch (Exception ex)
             {
@@ -71,7 +103,15 @@ namespace Lumina.UI.Services
             try
             {
                 var response = await _httpClient.GetAsync($"/api/collages/{id}");
-                response.EnsureSuccessStatusCode();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return new ApiResponse<CollageDto>
+                    {
+                        Success = false,
+                        Message = $"HTTP {response.StatusCode}"
+                    };
+                }
 
                 return await response.Content.ReadFromJsonAsync<ApiResponse<CollageDto>>()
                     ?? new ApiResponse<CollageDto> { Success = false, Message = "Failed to parse response" };
@@ -101,7 +141,15 @@ namespace Lumina.UI.Services
                 };
 
                 var response = await _httpClient.PostAsJsonAsync("/api/collages/layer", request);
-                response.EnsureSuccessStatusCode();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return new ApiResponse<bool>
+                    {
+                        Success = false,
+                        Message = $"HTTP {response.StatusCode}"
+                    };
+                }
 
                 return await response.Content.ReadFromJsonAsync<ApiResponse<bool>>()
                     ?? new ApiResponse<bool> { Success = false, Message = "Failed to parse response" };
@@ -121,7 +169,15 @@ namespace Lumina.UI.Services
             try
             {
                 var response = await _httpClient.DeleteAsync($"/api/collages/{id}");
-                response.EnsureSuccessStatusCode();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return new ApiResponse<bool>
+                    {
+                        Success = false,
+                        Message = $"HTTP {response.StatusCode}"
+                    };
+                }
 
                 return await response.Content.ReadFromJsonAsync<ApiResponse<bool>>()
                     ?? new ApiResponse<bool> { Success = false, Message = "Failed to parse response" };

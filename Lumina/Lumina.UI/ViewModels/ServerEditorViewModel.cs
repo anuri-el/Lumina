@@ -40,6 +40,13 @@ namespace Lumina.UI.ViewModels
             set { _connectionStatus = value; OnPropertyChanged(); }
         }
 
+        private string _serverUrl = "http://localhost:5155";
+        public string ServerUrl
+        {
+            get => _serverUrl;
+            set { _serverUrl = value; OnPropertyChanged(); }
+        }
+
         private int? _currentCollageId = null;
         public int? CurrentCollageId
         {
@@ -59,7 +66,7 @@ namespace Lumina.UI.ViewModels
 
         public ServerEditorViewModel()
         {
-            _apiClient = new ApiClientService("https://localhost:7001");
+            _apiClient = new ApiClientService("http://localhost:5155");  // HTTP замість HTTPS
 
             ConnectToServerCommand = new RelayCommand(async () => await ConnectToServer());
             UploadImageCommand = new RelayCommand(async () => await UploadImage());
@@ -67,13 +74,16 @@ namespace Lumina.UI.ViewModels
             CreateCollageCommand = new RelayCommand(async () => await CreateCollage());
             LoadCollagesCommand = new RelayCommand(async () => await LoadCollages());
             SaveCollageCommand = new RelayCommand(async () => await SaveCollage());
+
+            AppendLog($"Initialized - Server URL: {ServerUrl}");
         }
 
         private async Task ConnectToServer()
         {
             try
             {
-                AppendLog("Attempting to connect to server...");
+                AppendLog($"Attempting to connect to {ServerUrl}...");
+                ConnectionStatus = "Connecting...";
 
                 // Перевіряємо з'єднання, завантажуючи список зображень
                 var response = await _apiClient.Images.GetAllImagesAsync();
@@ -83,13 +93,17 @@ namespace Lumina.UI.ViewModels
                     IsConnected = true;
                     ConnectionStatus = "Connected";
                     AppendLog($"✓ Connected to server successfully");
+                    AppendLog($"✓ Server responded with {response.Data?.Count ?? 0} images");
+
                     await LoadImages();
+                    await LoadCollages();
                 }
                 else
                 {
                     IsConnected = false;
                     ConnectionStatus = "Connection failed";
                     AppendLog($"✗ Connection failed: {response.Message}");
+                    AppendLog($"⚠️  Make sure server is running: dotnet run in Lumina.Server folder");
                 }
             }
             catch (Exception ex)
@@ -97,6 +111,7 @@ namespace Lumina.UI.ViewModels
                 IsConnected = false;
                 ConnectionStatus = "Error";
                 AppendLog($"✗ Error connecting to server: {ex.Message}");
+                AppendLog($"⚠️  Check if server is running on {ServerUrl}");
             }
         }
 
@@ -104,6 +119,13 @@ namespace Lumina.UI.ViewModels
         {
             try
             {
+                if (!IsConnected)
+                {
+                    AppendLog("✗ Not connected to server. Click 'Connect' first.");
+                    MessageBox.Show("Please connect to server first", "Not Connected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
                 var dialog = new Microsoft.Win32.OpenFileDialog
                 {
                     Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif",
@@ -173,6 +195,13 @@ namespace Lumina.UI.ViewModels
         {
             try
             {
+                if (!IsConnected)
+                {
+                    AppendLog("✗ Not connected to server. Click 'Connect' first.");
+                    MessageBox.Show("Please connect to server first", "Not Connected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
                 string collageName = $"Collage_{DateTime.Now:yyyyMMdd_HHmmss}";
                 AppendLog($"Creating collage: {collageName}...");
 
@@ -213,6 +242,13 @@ namespace Lumina.UI.ViewModels
                         ServerCollages.Add(collage);
                     }
                     AppendLog($"✓ Loaded {response.Data.Count} collages from server");
+
+                    // Якщо є колажі, вибираємо останній
+                    if (response.Data.Count > 0)
+                    {
+                        CurrentCollageId = response.Data.Last().Id;
+                        AppendLog($"✓ Active collage: {response.Data.Last().Title} (ID: {CurrentCollageId})");
+                    }
                 }
                 else
                 {
